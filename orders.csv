@@ -1,0 +1,3 @@
+,exchange,tradingsymbol,product,order_type,transaction_type,quantity,price,result
+0,NFO,BANKNIFTY21AUG35700PE,CNC,LIMIT,SELL,25,84.05,
+1,NFO,BANKNIFTY21AUG35700PE,CNC,LIMIT,SELL,25,125.1,"{'account_id': 'ZK2474', 'exchange': 'NFO', 'tradingsymbol': 'BANKNIFTY21AUG35700PE', 'validity': 'DAY', 'product': 'CNC', 'order_type': 'LIMIT', 'transaction_type': 'SELL', 'quantity': 25, 'price': 125.1, 'ltp_atp': 'LTP', 'squareoff_abs_tick': 'absolute', 'stoploss_abs_tick': 'absolute', 'timestamp': '2021-08-26 12:50:17', 'triggered_at': 122.95, 'order_result': {'status': 'success', 'order_id': '210826002780891', 'rejection_reason': ''}}"
