@@ -90,16 +90,24 @@ def get_nearest_suppport_resistance(SupRes, close, tf = '10minute'):
             supports.append(val)
         else:
             resistances.append(val)
+    print(resistances)
     if resistances:
+        print("inside if")
         resistance = min(resistances)
+    
     else:
+        print("inside else")
         data = getdata(kite,token,20,tf)
         SupRes = get_support_resistance(data)
         for val in SupRes:
             if val > close:
                 resistances.append(val)
+        if resistances:
+            print("inside else if")
+            resistance = min(resistances)
         if not resistances:
-            resistance = Utils.getNearestStrikePrice(close+50)
+            resistance = Utils.getNearestStrikePrice(close+130)
+    
         
         
     if supports:
@@ -113,6 +121,7 @@ def get_nearest_suppport_resistance(SupRes, close, tf = '10minute'):
                 supports.append(val)
         if not supports:
             support = Utils.getNearestStrikePrice(close-100)
+    
 
     return resistance,support
 ####################################################################################################################
@@ -144,7 +153,7 @@ def checkorder_status_palce_gtt(mins,orderId,tradingsymbol,price,sl,orders,tf,tr
             if order_status == 'OPEN':
                 kite.cancel_order(kite.VARIETY_REGULAR, orderId, parent_order_id=None)
                 TelegrambotWrapper.send_message("Order Not Trigerred"+ tf+ "tf, Cancelling the Order")
-                logging.ingo("order cancelled")
+                logging.info("order cancelled")
                 break
             elif order_status == 'REJECTED':
                 break
@@ -153,31 +162,35 @@ def checkorder_status_palce_gtt(mins,orderId,tradingsymbol,price,sl,orders,tf,tr
         sleep(1)
 ##################################################################################################################################
 def run4minsstrategy(data,sup_res_4):
+    print("4mins strategy")
     logging.info("Running 4 mins strategy")
     if True:
         if data['date'].iloc[-1].minute == (dt.now().minute):
             data = data.iloc[:-1]
         close  = data.iloc[-1].close
         resistance_4,support_4 = get_nearest_suppport_resistance(sup_res_4,data.iloc[-2].close,'4minute')
+        print("close",close)
+        print("resistance",resistance_4)
+        print("support", support_4)
         strike_price = Utils.getNearestStrikePrice(close-100)
         atm_ce,atm_pe = Instruments.get_nearest_expiry_options("BANKNIFTY",strike_price,"NFO")
         isBullish = CandlePatternWrapper.isBullish(data.iloc[-1])
         logging.info("Close : "+str(close) + "Resistance :"+str(resistance_4)+"Support" + str(support_4))
         if (isBullish and close > resistance_4) & (data.iloc[-2].close < resistance_4):
-            ce_opt_data = getdata(kite,atm_ce.instrument_token,1,tf1)
+            ce_opt_data = getdata(kite,atm_ce.instrument_token,2,tf1)
             ce_opt_data = ce_opt_data[ce_opt_data['date'] == data['date'].iloc[-1]]
             price = ce_opt_data.iloc[-1]['high'] +1
             orders = [
                 {
                 "transaction_type" : "SELL",
-                "quantity" : 25,
+                "quantity" : 50,
                 "price" : ce_opt_data.iloc[-1]['low']-2,
                 "order_type" : kite.ORDER_TYPE_LIMIT,
                 "product" : kite.PRODUCT_NRML
                 },
                 {
                 "transaction_type" : "SELL",
-                "quantity" : 25,
+                "quantity" : 50,
                 "price" : ce_opt_data.iloc[-1]['high'] +6,
                 "order_type" : kite.ORDER_TYPE_LIMIT,
                 "product" : kite.PRODUCT_NRML
@@ -194,7 +207,7 @@ def run4minsstrategy(data,sup_res_4):
                         exchange=kite.EXCHANGE_NFO,
                         tradingsymbol=atm_ce['tradingsymbol'],
                         transaction_type=kite.TRANSACTION_TYPE_BUY,
-                        quantity=25,
+                        quantity=50,
                         price=ce_opt_data.iloc[-1]['high'] +1,
                         product=kite.PRODUCT_NRML,
                         order_type=kite.ORDER_TYPE_LIMIT)
@@ -207,21 +220,21 @@ def run4minsstrategy(data,sup_res_4):
                 sleep(1)
            
         if (~isBullish and close < support_4) & (data.iloc[-2].close > support_4):
-            pe_opt_data = getdata(kite,atm_pe.instrument_token,1,tf1)
+            pe_opt_data = getdata(kite,atm_pe.instrument_token,2,tf1)
             pe_opt_data = pe_opt_data[pe_opt_data['date'] == data['date'].iloc[-1]]
             price = pe_opt_data.iloc[-1]['high'] + 1
 
             orders = [
                 {
                 "transaction_type" : "SELL",
-                "quantity" : 25,
+                "quantity" : 50,
                 "price" : pe_opt_data.iloc[-1]['low']-2,
                 "order_type" : kite.ORDER_TYPE_LIMIT,
                 "product" : kite.PRODUCT_NRML
                 },
                 {
                 "transaction_type" : "SELL",
-                "quantity" : 25,
+                "quantity" : 50,
                 "price" : pe_opt_data.iloc[-1]['high'] + 6,
                 "order_type" : kite.ORDER_TYPE_LIMIT,
                 "product" : kite.PRODUCT_NRML
@@ -237,7 +250,7 @@ def run4minsstrategy(data,sup_res_4):
                         exchange=kite.EXCHANGE_NFO,
                         tradingsymbol=atm_pe['tradingsymbol'],
                         transaction_type=kite.TRANSACTION_TYPE_BUY,
-                        quantity=25,
+                        quantity=50,
                         price=pe_opt_data.iloc[-1]['high'] +1,
                         product=kite.PRODUCT_NRML,
                         order_type=kite.ORDER_TYPE_LIMIT)
@@ -262,25 +275,30 @@ def runstrategy(data,sup_res):
         
         close  = data.iloc[-1].close
         resistance,support = get_nearest_suppport_resistance(sup_res,data.iloc[-2].close)
+        print("10mins strategy")
+        print("close",close)
+        print("resistance",resistance)
+        print("support", support)
+
         logging.info("Close : "+str(close) + "Resistance :"+str(resistance)+"Support" + str(support))
         strike_price = Utils.getNearestStrikePrice(close)
         atm_ce,atm_pe = Instruments.get_nearest_expiry_options("BANKNIFTY",strike_price,"NFO")
         isBullish = CandlePatternWrapper.isBullish(data.iloc[-1])
         if (isBullish and close > resistance) & (data.iloc[-2].close < resistance):
-            ce_opt_data = getdata(kite,atm_ce.instrument_token,1,tf)
+            ce_opt_data = getdata(kite,atm_ce.instrument_token,2,tf)
             ce_opt_data = ce_opt_data[ce_opt_data['date'] == data['date'].iloc[-1]]
             price = ce_opt_data.iloc[-1]['high'] +1
             orders = [
                 {
                 "transaction_type" : "SELL",
-                "quantity" : 25,
+                "quantity" : 50,
                 "price" : ce_opt_data.iloc[-1]['low']-2,
                 "order_type" : kite.ORDER_TYPE_LIMIT,
                 "product" : kite.PRODUCT_NRML
                 },
                 {
                 "transaction_type" : "SELL",
-                "quantity" : 25,
+                "quantity" : 50,
                 "price" : ce_opt_data.iloc[-1]['high'] +9,
                 "order_type" : kite.ORDER_TYPE_LIMIT,
                 "product" : kite.PRODUCT_NRML
@@ -297,7 +315,7 @@ def runstrategy(data,sup_res):
                         exchange=kite.EXCHANGE_NFO,
                         tradingsymbol=atm_ce['tradingsymbol'],
                         transaction_type=kite.TRANSACTION_TYPE_BUY,
-                        quantity=25,
+                        quantity=50,
                         price=ce_opt_data.iloc[-1]['high'] +1,
                         product=kite.PRODUCT_NRML,
                         order_type=kite.ORDER_TYPE_LIMIT)
@@ -312,21 +330,21 @@ def runstrategy(data,sup_res):
                 
                 
         if (~isBullish and close < support) & (data.iloc[-2].close > support):
-            pe_opt_data = getdata(kite,atm_pe.instrument_token,1,tf)
+            pe_opt_data = getdata(kite,atm_pe.instrument_token,2,tf)
             pe_opt_data = pe_opt_data[pe_opt_data['date'] == data['date'].iloc[-1]]
             price = pe_opt_data.iloc[-1]['high'] + 1
 
             orders = [
                 {
                 "transaction_type" : "SELL",
-                "quantity" : 25,
+                "quantity" : 50,
                 "price" : pe_opt_data.iloc[-1]['low']-2,
                 "order_type" : kite.ORDER_TYPE_LIMIT,
                 "product" : kite.PRODUCT_NRML
                 },
                 {
                 "transaction_type" : "SELL",
-                "quantity" : 25,
+                "quantity" : 50,
                 "price" : pe_opt_data.iloc[-1]['high'] + 9,
                 "order_type" : kite.ORDER_TYPE_LIMIT,
                 "product" : kite.PRODUCT_NRML
@@ -343,7 +361,7 @@ def runstrategy(data,sup_res):
                         exchange=kite.EXCHANGE_NFO,
                         tradingsymbol=atm_pe['tradingsymbol'],
                         transaction_type=kite.TRANSACTION_TYPE_BUY,
-                        quantity=25,
+                        quantity=50,
                         price=pe_opt_data.iloc[-1]['high'] +1,
                         product=kite.PRODUCT_NRML,
                         order_type=kite.ORDER_TYPE_LIMIT)
@@ -357,12 +375,12 @@ def runstrategy(data,sup_res):
 ##################################################################################################################################
 def runstrategies():
     logging.info(dt.now())
-    data = getdata(kite,token,1,tf)
+    data = getdata(kite,token,2,tf)
     if dt.now().minute % 10 == mod_reminder:
         runstrategy(data,sup_res)
   
     if dt.now().minute % 4 == 3:
-        data = getdata(kite,token,1,tf1)
+        data = getdata(kite,token,2,tf1)
         run4minsstrategy(data,sup_res_4)
     
 if __name__=="__main__":
@@ -380,7 +398,7 @@ if __name__=="__main__":
     end_time = start_time.replace(hour = 15, minute=0)
     rt = RepeatedTimer(120, runstrategies) # it auto-starts, no need of rt.start()
     try:
-        sleep(6000) # your long-running job goes here...
+        sleep(19080) # your long-running job goes here...
     finally:
         rt.stop()
    

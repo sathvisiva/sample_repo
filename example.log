@@ -1,131 +1,614 @@
-DEBUG:urllib3.connectionpool:https://api.kite.trade:443 "GET /instruments/historical/12476930/10minute?from=2021-09-04+11%3A33%3A05&to=2021-09-14+11%3A33%3A05&interval=10minute&continuous=0&oi=0 HTTP/1.1" 200 4221
-DEBUG:urllib3.connectionpool:https://api.kite.trade:443 "GET /instruments/historical/12476930/4minute?from=2021-09-04+11%3A33%3A05&to=2021-09-14+11%3A33%3A05&interval=4minute&continuous=0&oi=0 HTTP/1.1" 200 10207
-INFO:root:2021-09-14 11:39:05.617623
+INFO:root:2021-09-17 09:17:04.855936
+INFO:root:2021-09-17 09:19:04.860225
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36764.45
-INFO:root:2021-09-14 11:43:05.971466
-INFO:root:Running 4 mins strategy
-INFO:root:nearest support resistance
-INFO:root:36738.6
-INFO:root:Close : 36753.65Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 11:45:05.975399
+INFO:root:37808.4
+INFO:root:Close : 38008.5Resistance :37900Support37792.3
+INFO:root:2021-09-17 09:21:04.868902
+INFO:root:2021-09-17 09:25:09.654284
 INFO:root:Running 10 mins Strategy
-INFO:root:2021-09-14 11:45:06.047444
+INFO:root:2021-09-17 09:25:09.780308
 INFO:root:nearest support resistance
-INFO:root:36764.45
-INFO:root:2021-09-14 11:49:06.982659
-INFO:root:2021-09-14 11:51:06.995485
+INFO:root:37808.4
+INFO:root:Close : 37962.0Resistance :37900Support37688.35
+INFO:root:2021-09-17 09:31:08.989238
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36759.95
-INFO:root:Close : 36774.25Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 11:53:07.004762
-INFO:root:2021-09-14 11:55:07.010906
+INFO:root:37879.5
+INFO:root:Close : 37981.3Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 09:33:09.001863
+INFO:root:2021-09-17 09:35:09.008595
 INFO:root:Running 10 mins Strategy
-INFO:root:2021-09-14 11:55:07.075616
+INFO:root:2021-09-17 09:35:09.106450
 INFO:root:nearest support resistance
-INFO:root:36756.1
-INFO:root:Close : 36767.25Resistance :36791.15Support36690.05
+INFO:root:37962.0
+INFO:root:Close : 37902.2Resistance :38112.9Support37688.35
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36774.25
-INFO:root:Close : 36767.25Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 11:57:07.018188
-INFO:root:2021-09-14 11:59:07.027364
+INFO:root:37981.3
+INFO:root:Close : 37902.2Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 09:37:09.015714
+INFO:root:2021-09-17 09:39:09.023576
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36767.25
-INFO:root:Close : 36765.25Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:01:07.036277
-INFO:root:2021-09-14 12:03:07.044982
+INFO:root:37902.2
+INFO:root:Close : 37877.75Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 09:41:09.028604
+INFO:root:2021-09-17 09:43:09.032862
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36765.25
-INFO:root:Close : 36767.15Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:05:07.049044
+INFO:root:37877.75
+INFO:root:Close : 37931.7Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 09:45:09.040986
 INFO:root:Running 10 mins Strategy
-INFO:root:2021-09-14 12:05:07.127643
+INFO:root:2021-09-17 09:45:09.130599
 INFO:root:nearest support resistance
-INFO:root:36767.25
-INFO:root:Close : 36749.95Resistance :36791.15Support36690.05
-INFO:root:2021-09-14 12:07:07.056983
+INFO:root:37902.2
+INFO:root:Close : 37950.5Resistance :38112.9Support37688.35
+INFO:root:2021-09-17 09:47:09.047650
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36767.15
-INFO:root:Close : 36755.0Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:09:07.062372
-INFO:root:2021-09-14 12:11:07.081400
+INFO:root:37931.7
+INFO:root:Close : 37901.0Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 09:49:09.058654
+INFO:root:2021-09-17 09:51:09.070967
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36755.0
-INFO:root:Close : 36740.95Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:13:07.085592
-INFO:root:2021-09-14 12:15:07.094835
+INFO:root:37901.0
+INFO:root:Close : 37943.4Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 09:53:09.077188
+INFO:root:2021-09-17 09:55:09.082247
 INFO:root:Running 10 mins Strategy
-INFO:root:2021-09-14 12:15:07.181532
+INFO:root:2021-09-17 09:55:09.165945
 INFO:root:nearest support resistance
-INFO:root:36749.95
-INFO:root:Close : 36729.2Resistance :36791.15Support36690.05
+INFO:root:37950.5
+INFO:root:Close : 37977.15Resistance :38112.9Support37688.35
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36740.95
-INFO:root:Close : 36729.2Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:17:07.099000
-INFO:root:2021-09-14 12:19:07.105604
+INFO:root:37943.4
+INFO:root:Close : 37977.15Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 09:57:09.090626
+INFO:root:2021-09-17 09:59:09.097114
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36729.2
-INFO:root:Close : 36727.0Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:21:07.114670
-INFO:root:2021-09-14 12:23:07.121036
+INFO:root:37977.15
+INFO:root:Close : 37964.8Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:01:09.102292
+INFO:root:2021-09-17 10:03:09.107407
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36727.0
-INFO:root:Close : 36728.45Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:25:07.129594
+INFO:root:37964.8
+INFO:root:Close : 37985.45Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:05:09.114878
 INFO:root:Running 10 mins Strategy
-INFO:root:2021-09-14 12:25:07.220985
+INFO:root:2021-09-17 10:05:09.205491
 INFO:root:nearest support resistance
-INFO:root:36729.2
-INFO:root:Close : 36731.0Resistance :36791.15Support36690.05
-INFO:root:2021-09-14 12:27:07.145537
+INFO:root:37977.15
+INFO:root:Close : 37978.8Resistance :38112.9Support37688.35
+INFO:root:2021-09-17 10:07:09.122468
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36728.45
-INFO:root:Close : 36744.0Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:29:07.154674
-INFO:root:2021-09-14 12:31:07.163842
+INFO:root:37985.45
+INFO:root:Close : 37956.3Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:09:09.136068
+INFO:root:2021-09-17 10:11:09.144242
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36744.0
-INFO:root:Close : 36756.35Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:33:07.173298
-INFO:root:2021-09-14 12:35:07.182595
+INFO:root:37956.3
+INFO:root:Close : 37940.0Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:13:09.156693
+INFO:root:2021-09-17 10:15:09.164048
 INFO:root:Running 10 mins Strategy
-INFO:root:2021-09-14 12:35:07.276367
+INFO:root:2021-09-17 10:15:09.244072
 INFO:root:nearest support resistance
-INFO:root:36731.0
-INFO:root:Close : 36745.1Resistance :36791.15Support36690.05
+INFO:root:37978.8
+INFO:root:Close : 37970.0Resistance :38041.95Support37688.35
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36756.35
-INFO:root:Close : 36745.1Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:37:07.186588
-INFO:root:2021-09-14 12:39:07.195308
+INFO:root:37940.0
+INFO:root:Close : 37970.0Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:17:09.172270
+INFO:root:2021-09-17 10:19:09.178669
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36745.1
-INFO:root:Close : 36756.25Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:41:07.203526
-INFO:root:2021-09-14 12:43:07.217359
+INFO:root:37970.0
+INFO:root:Close : 38029.15Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:21:09.187841
+INFO:root:2021-09-17 10:23:09.196120
 INFO:root:Running 4 mins strategy
 INFO:root:nearest support resistance
-INFO:root:36756.25
-INFO:root:Close : 36750.0Resistance :36782.1Support36706.05
-INFO:root:2021-09-14 12:45:07.225297
+INFO:root:38029.15
+INFO:root:Close : 38016.05Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:25:09.200621
 INFO:root:Running 10 mins Strategy
-INFO:root:2021-09-14 12:45:07.306514
+INFO:root:2021-09-17 10:25:09.280206
 INFO:root:nearest support resistance
-INFO:root:36745.1
-INFO:root:Close : 36747.5Resistance :36791.15Support36690.05
+INFO:root:37970.0
+INFO:root:Close : 38029.85Resistance :38112.9Support37688.35
+INFO:root:2021-09-17 10:27:09.209797
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38016.05
+INFO:root:Close : 38012.5Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:29:09.222474
+INFO:root:2021-09-17 10:31:09.228794
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38012.5
+INFO:root:Close : 38032.9Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:33:09.241010
+INFO:root:2021-09-17 10:35:09.249839
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 10:35:09.341494
+INFO:root:nearest support resistance
+INFO:root:38029.85
+INFO:root:Close : 38060.0Resistance :38112.9Support37688.35
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38032.9
+INFO:root:Close : 38060.0Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:37:09.256394
+INFO:root:2021-09-17 10:39:09.263749
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38060.0
+INFO:root:Close : 38040.0Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:41:09.269028
+INFO:root:2021-09-17 10:43:09.273828
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38040.0
+INFO:root:Close : 38047.85Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:45:09.279425
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 10:45:09.345862
+INFO:root:nearest support resistance
+INFO:root:38060.0
+INFO:root:Close : 38087.1Resistance :38112.9Support37688.35
+INFO:root:2021-09-17 10:47:09.288590
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38047.85
+INFO:root:Close : 38104.95Resistance :38112.9Support37792.3
+INFO:root:2021-09-17 10:49:09.301076
+INFO:root:2021-09-17 10:51:09.307543
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38104.95
+INFO:root:Close : 38179.55Resistance :38112.9Support37792.3
+INFO:root:Timeout
+INFO:root:2021-09-17 10:56:30.662604
+INFO:root:2021-09-17 10:58:30.672164
+INFO:root:2021-09-17 11:00:30.678358
+INFO:root:2021-09-17 11:02:30.687495
+INFO:root:2021-09-17 11:04:30.692645
+INFO:root:2021-09-17 11:09:24.042803
+INFO:root:2021-09-17 11:13:04.382417
+INFO:root:2021-09-17 11:15:04.387931
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 11:15:04.473598
+INFO:root:nearest support resistance
+INFO:root:38105.3
+INFO:root:Close : 38024.65Resistance :38112.9Support37801.1
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38010.0
+INFO:root:Close : 38024.65Resistance :38063.45Support37929.3
+INFO:root:2021-09-17 11:17:04.396893
+INFO:root:2021-09-17 11:19:04.404990
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:38024.65
+INFO:root:Close : 37964.0Resistance :38063.45Support37929.3
+INFO:root:2021-09-17 11:21:04.410031
+INFO:root:2021-09-17 11:23:04.416714
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37964.0
+INFO:root:Close : 37983.35Resistance :38063.45Support37929.3
+INFO:root:2021-09-17 11:25:04.421532
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 11:25:04.526792
+INFO:root:nearest support resistance
+INFO:root:38024.65
+INFO:root:Close : 37950.1Resistance :38112.9Support37801.1
+INFO:root:2021-09-17 11:27:04.429933
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37983.35
+INFO:root:Close : 37935.0Resistance :38063.45Support37929.3
+INFO:root:2021-09-17 11:29:04.443040
+INFO:root:2021-09-17 11:31:04.454661
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37935.0
+INFO:root:Close : 37845.9Resistance :38063.45Support37929.3
+INFO:root:2021-09-17 11:33:04.462064
+INFO:root:Timeout
+INFO:root:2021-09-17 11:35:04.468589
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 11:35:04.557289
+INFO:root:nearest support resistance
+INFO:root:37950.1
+INFO:root:Close : 37860.15Resistance :38112.9Support37801.1
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37845.9
+INFO:root:Close : 37860.15Resistance :37862.0Support37792.3
+INFO:root:2021-09-17 11:37:04.473733
+INFO:root:2021-09-17 11:39:04.482909
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37860.15
+INFO:root:Close : 37826.8Resistance :37862.0Support37792.3
+INFO:root:2021-09-17 11:41:04.489410
+INFO:root:2021-09-17 11:45:05.622994
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 11:45:05.724804
+INFO:root:nearest support resistance
+INFO:root:37860.15
+INFO:root:Close : 37670.1Resistance :38112.9Support37801.1
+INFO:root:2021-09-17 11:47:05.635818
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37710.05
+INFO:root:Close : 37782.45Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 11:49:05.643090
+INFO:root:Timeout
+INFO:root:2021-09-17 11:51:05.652243
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37782.45
+INFO:root:Close : 37828.85Resistance :37792.3Support37740.0
+INFO:root:2021-09-17 11:53:05.661314
+INFO:root:Timeout
+INFO:root:2021-09-17 11:55:05.669584
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 11:55:05.750868
+INFO:root:nearest support resistance
+INFO:root:37670.1
+INFO:root:Close : 37758.3Resistance :37688.35Support37544.75
+INFO:root:2021-09-17 11:57:05.674008
+INFO:root:2021-09-17 11:59:05.680954
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37758.3
+INFO:root:Close : 37720.0Resistance :37792.3Support37740.0
+INFO:root:Timeout
+INFO:root:2021-09-17 12:01:05.688440
+INFO:root:2021-09-17 12:03:05.699882
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37720.0
+INFO:root:Close : 37690.0Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 12:05:05.709024
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 12:05:05.790724
+INFO:root:nearest support resistance
+INFO:root:37758.3
+INFO:root:Close : 37654.3Resistance :37801.1Support37688.35
+INFO:root:2021-09-17 12:07:05.717863
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37690.0
+INFO:root:Close : 37635.0Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 12:09:05.722484
+INFO:root:2021-09-17 12:11:05.727712
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37635.0
+INFO:root:Close : 37699.9Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:13:05.738614
+INFO:root:Timeout
+INFO:root:2021-09-17 12:15:05.743051
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 12:15:05.844156
+INFO:root:nearest support resistance
+INFO:root:37654.3
+INFO:root:Close : 37628.0Resistance :37688.35Support37544.75
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37699.9
+INFO:root:Close : 37628.0Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 12:17:05.763156
+INFO:root:2021-09-17 12:19:05.770922
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37628.0
+INFO:root:Close : 37639.35Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:21:05.779458
+INFO:root:2021-09-17 12:23:05.784657
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37639.35
+INFO:root:Close : 37674.1Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:25:05.794863
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 12:25:05.875107
+INFO:root:nearest support resistance
+INFO:root:37628.0
+INFO:root:Close : 37672.7Resistance :37688.35Support37544.75
+INFO:root:2021-09-17 12:27:05.798293
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37674.1
+INFO:root:Close : 37693.1Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:29:05.805909
+INFO:root:2021-09-17 12:31:05.811694
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37693.1
+INFO:root:Close : 37692.0Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 12:33:05.832840
+INFO:root:2021-09-17 12:35:05.837715
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 12:35:05.916892
+INFO:root:nearest support resistance
+INFO:root:37672.7
+INFO:root:Close : 37684.45Resistance :37688.35Support37544.75
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37692.0
+INFO:root:Close : 37684.45Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 12:37:05.844271
+INFO:root:2021-09-17 12:39:05.851884
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37684.45
+INFO:root:Close : 37599.0Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:41:05.860676
+INFO:root:2021-09-17 12:43:05.865643
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37599.0
+INFO:root:Close : 37594.45Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:45:05.874293
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 12:45:05.962648
+INFO:root:nearest support resistance
+INFO:root:37684.45
+INFO:root:Close : 37558.85Resistance :37688.35Support37544.75
+INFO:root:2021-09-17 12:47:05.879791
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37594.45
+INFO:root:Close : 37555.7Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:49:05.887240
+INFO:root:2021-09-17 12:51:05.907471
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37555.7
+INFO:root:Close : 37600.2Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:53:05.921850
+INFO:root:2021-09-17 12:55:05.930609
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 12:55:06.009963
+INFO:root:nearest support resistance
+INFO:root:37558.85
+INFO:root:Close : 37588.6Resistance :37688.35Support37544.75
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37600.2
+INFO:root:Close : 37588.6Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 12:57:05.938069
+INFO:root:2021-09-17 12:59:05.943754
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37588.6
+INFO:root:Close : 37602.25Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:01:05.952652
+INFO:root:2021-09-17 13:03:05.958590
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37602.25
+INFO:root:Close : 37592.9Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:05:05.967609
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 13:05:06.045562
+INFO:root:nearest support resistance
+INFO:root:37588.6
+INFO:root:Close : 37646.95Resistance :37688.35Support37544.75
+INFO:root:2021-09-17 13:07:05.972145
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37592.9
+INFO:root:Close : 37648.85Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:09:05.976284
+INFO:root:2021-09-17 13:11:05.983312
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37648.85
+INFO:root:Close : 37626.65Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:13:06.002240
+INFO:root:2021-09-17 13:15:06.016093
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 13:15:06.092231
+INFO:root:nearest support resistance
+INFO:root:37646.95
+INFO:root:Close : 37708.95Resistance :37688.35Support37544.75
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37626.65
+INFO:root:Close : 37708.95Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:17:06.022587
+INFO:root:2021-09-17 13:19:06.027089
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37708.95
+INFO:root:Close : 37700.6Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 13:21:06.032005
+INFO:root:2021-09-17 13:23:06.040889
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37700.6
+INFO:root:Close : 37709.5Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 13:25:06.049462
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 13:25:06.127912
+INFO:root:nearest support resistance
+INFO:root:37708.95
+INFO:root:Close : 37675.9Resistance :37801.1Support37688.35
+INFO:root:2021-09-17 13:27:06.056645
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37709.5
+INFO:root:Close : 37675.0Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 13:29:06.065113
+INFO:root:2021-09-17 13:31:06.072563
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37675.0
+INFO:root:Close : 37666.0Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:33:06.082002
+INFO:root:2021-09-17 13:35:06.095449
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 13:35:06.156921
+INFO:root:nearest support resistance
+INFO:root:37675.9
+INFO:root:Close : 37601.95Resistance :37688.35Support37544.75
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37666.0
+INFO:root:Close : 37601.95Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:37:06.104296
+INFO:root:2021-09-17 13:39:06.109452
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37601.95
+INFO:root:Close : 37660.0Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:41:06.118055
+INFO:root:2021-09-17 13:43:06.126668
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37660.0
+INFO:root:Close : 37665.0Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:45:06.132508
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 13:45:06.220895
+INFO:root:nearest support resistance
+INFO:root:37601.95
+INFO:root:Close : 37680.5Resistance :37688.35Support37544.75
+INFO:root:2021-09-17 13:47:06.138460
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37665.0
+INFO:root:Close : 37675.0Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:49:06.147401
+INFO:root:2021-09-17 13:51:06.156332
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37675.0
+INFO:root:Close : 37688.0Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 13:53:06.163237
+INFO:root:2021-09-17 13:55:06.176834
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 13:55:06.269215
+INFO:root:nearest support resistance
+INFO:root:37680.5
+INFO:root:Close : 37697.4Resistance :37688.35Support37544.75
+INFO:root:2021-09-17 13:57:06.185259
+INFO:root:2021-09-17 13:59:06.192152
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37697.4
+INFO:root:Close : 37730.25Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 14:01:06.197751
+INFO:root:2021-09-17 14:03:06.205573
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37730.25
+INFO:root:Close : 37687.85Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 14:05:06.211298
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 14:05:06.296976
+INFO:root:nearest support resistance
+INFO:root:37697.4
+INFO:root:Close : 37690.9Resistance :37801.1Support37688.35
+INFO:root:2021-09-17 14:07:06.219143
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37687.85
+INFO:root:Close : 37651.6Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 14:09:06.230612
+INFO:root:2021-09-17 14:11:06.239235
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37651.6
+INFO:root:Close : 37660.0Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 14:13:06.248288
+INFO:root:2021-09-17 14:15:06.252632
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 14:15:06.343637
+INFO:root:nearest support resistance
+INFO:root:37690.9
+INFO:root:Close : 37709.5Resistance :37801.1Support37688.35
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37660.0
+INFO:root:Close : 37709.5Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 14:17:06.259213
+INFO:root:2021-09-17 14:19:06.281917
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37709.5
+INFO:root:Close : 37750.0Resistance :37740.0Support37688.35
+INFO:root:2021-09-17 14:21:06.290405
+INFO:root:2021-09-17 14:23:06.295169
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37750.0
+INFO:root:Close : 37677.65Resistance :37792.3Support37740.0
+INFO:root:2021-09-17 14:25:06.299898
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 14:25:06.410925
+INFO:root:nearest support resistance
+INFO:root:37709.5
+INFO:root:Close : 37621.5Resistance :37801.1Support37688.35
+INFO:root:2021-09-17 14:27:06.307211
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37677.65
+INFO:root:Close : 37595.9Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 14:29:06.318533
+INFO:root:2021-09-17 14:31:06.327302
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37595.9
+INFO:root:Close : 37595.75Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 14:33:06.332303
+INFO:root:2021-09-17 14:35:06.340629
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 14:35:06.473727
+INFO:root:nearest support resistance
+INFO:root:37621.5
+INFO:root:Close : 37531.65Resistance :37688.35Support37544.75
+INFO:root:2021-09-17 14:37:06.349004
+INFO:root:2021-09-17 14:39:06.357674
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37531.65
+INFO:root:Close : 37578.35Resistance :37538.9Support37480.95
+INFO:root:Timeout
+INFO:root:2021-09-17 14:41:06.365276
+INFO:root:2021-09-17 14:43:06.369583
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37578.35
+INFO:root:Close : 37614.7Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 14:45:06.380881
+INFO:root:Running 10 mins Strategy
+INFO:root:2021-09-17 14:45:06.471970
+INFO:root:nearest support resistance
+INFO:root:37531.65
+INFO:root:Close : 37590.1Resistance :37544.75Support37451.0
+INFO:root:2021-09-17 14:47:06.393919
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37614.7
+INFO:root:Close : 37650.0Resistance :37688.35Support37538.9
+INFO:root:2021-09-17 14:49:06.402773
+INFO:root:2021-09-17 14:51:06.409557
+INFO:root:Running 4 mins strategy
+INFO:root:nearest support resistance
+INFO:root:37650.0
+INFO:root:Close : 37678.0Resistance :37688.35Support37538.9
